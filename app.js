@@ -3,13 +3,13 @@ const app = express();
 const PORT = process.env.port || 3000;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-
+app.set("port", process.env.PORT || 5000);
 app.get("/", (req, res) => {
   res.render("index.ejs");
   // res.send("1");
 });
 
-app.listen(PORT, (err) => {
+app.listen(app.get("port"), (err) => {
   if (err) {
     throw err;
   }
