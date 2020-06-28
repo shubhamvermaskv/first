@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/heyraman/first/issues"
   },
-  "homepage": "https://github.com/heyraman/first#readme"
+  "homepage": "https://github.com/heyraman/first#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0"
+  }
 }
